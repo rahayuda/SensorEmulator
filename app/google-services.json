@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "410626311115",
+    "project_id": "sensoremulator",
+    "storage_bucket": "sensoremulator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410626311115:android:a72e1919056196b12bec4e",
+        "android_client_info": {
+          "package_name": "com.example.sensoremulator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsTH5SCRe7TCcmgeI__FROwwlyTY4burk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
