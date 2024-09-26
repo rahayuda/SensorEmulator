@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
     private lateinit var textViewX: TextView
     private lateinit var textViewY: TextView
     private lateinit var textViewZ: TextView
-    private lateinit var textViewLocation: TextView
+    private lateinit var textViewLat: TextView
+    private lateinit var textViewLon: TextView
 
     private lateinit var database: DatabaseReference
 
@@ -37,7 +38,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         textViewX = findViewById(R.id.textViewX)
         textViewY = findViewById(R.id.textViewY)
         textViewZ = findViewById(R.id.textViewZ)
-        textViewLocation = findViewById(R.id.textViewLocation)
+        textViewLat = findViewById(R.id.textViewLat)
+        textViewLon = findViewById(R.id.textViewLon)
 
         // Inisialisasi Firebase
         database = FirebaseDatabase.getInstance().getReference("SensorData")
@@ -64,7 +66,8 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 location?.let {
                     val latitude = it.latitude
                     val longitude = it.longitude
-                    textViewLocation.text = "Location: Lat: $latitude, Lon: $longitude"
+                    textViewLat.text = "Latitude: $latitude"
+                    textViewLon.text = "Longitude: $longitude"
 
                     // Metode Push
                     //val locationData = mapOf("latitude" to latitude, "longitude" to longitude)

@@ -6,31 +6,72 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewX"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="X: "
-        android:textSize="18sp" />
+        android:text="@string/accelerometer"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginVertical="15dp"
+        />
 
-    <TextView
-        android:id="@+id/textViewY"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Y: "
-        android:textSize="18sp" />
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:padding="15dp">
 
-    <TextView
-        android:id="@+id/textViewZ"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Z: "
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/axis_x"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/axis_y"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/axis_z"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location: "
-        android:textSize="18sp" />
+        android:text="@string/location"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginVertical="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00FD8E"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textViewLat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/longitude"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </LinearLayout>

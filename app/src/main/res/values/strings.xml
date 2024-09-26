@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">SensorEmulator</string>
+    <string name="app_name">Sensor Emulator</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="axis_x">X: </string>
+    <string name="axis_y">Y: </string>
+    <string name="axis_z">Z: </string>
+    <string name="location">Location</string>
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitude: </string>
 </resources>
